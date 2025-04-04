@@ -28,19 +28,15 @@ Nmap is an industry-standard tool for mapping networks, identifying live hosts a
 What is the total number of the "TCP Connect" scans?
 
 <p align="center">
-At the top of the Wireshark window, click on Statistics from the menu bar. In the drop-down, click on Resolved Addresses.: <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 1 59 05 PM" src="https://github.com/user-attachments/assets/a80aef1c-2a04-4410-a472-6703ce2a9226" />
+The command needed to find the answer is given during the module explaination. The question is looking for any packet that has a size greater than 1024 bytes. The command will be, tcp.flags.syn == 1 and tcp.flags.ack == 0 and tcp.window_size > 1024. . The numbers to the right of Displayed is the answer: <br/>
+<img width="1440" alt="Screenshot 2025-04-04 at 10 23 13 AM" src="https://github.com/user-attachments/assets/c081e3aa-b58a-4a90-ab7a-d8d4ede25e09" />
+
+
 
 
 <br />
 <br />
-Resolved Addresses window will pop-up. At the top of this window is a search field labeled Search for entry. Type bbc into this search field.:  <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 03 38 PM" src="https://github.com/user-attachments/assets/64c65c1a-ed79-44e1-b640-921ff43b0102" />
-
-
-<br />
-<br />
-Answer is 199.232.24.81: <br/>
+Answer is 1000: <br/>
 
 
 
@@ -52,21 +48,16 @@ Answer is 199.232.24.81: <br/>
 Which scan type is used to scan the TCP port 80?
 
 <p align="center">
-Go to the Menu bar and click Statistics. Click on the Conversations option from the drop-down menu: <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 13 54 PM" src="https://github.com/user-attachments/assets/400d3db0-5bf5-47e8-a5ac-2f65929ad900" />
+Since we want to know that we are looking at port 80 via TCP. Click on the mint green filter bar, and use the filter tcp.port == 80. Looking at the first 4 results we can see that they are all part of the same stream by the connecting bracket. So next we want to move down to the Info section, to figure out what type of scan this could be. Taking a look at the different flags that were used, we see SYN, SYN ACK, ACK, RST ACK. It looks like the process of a Three-way Handshake.: <br/>
+<img width="1440" alt="Screenshot 2025-04-04 at 10 35 15 AM" src="https://github.com/user-attachments/assets/88a82ae6-6f08-4f6c-bc79-6c5d2bd95312" />
 
 
-
-<br />
-<br />
-The Conversations window will pop-up. You can see the different tabs at the top of this window. The tab that pertains to this question is the IPv4 tab. Look at the number on this tab, this is the answer to this question:  <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 16 01 PM" src="https://github.com/user-attachments/assets/3c4be1d0-663f-4d14-8779-cf4834af5f10" />
 
 
 
 <br />
 <br />
-Answer is 435: <br/>
+Answer is TCP Connect: <br/>
 
 
 
