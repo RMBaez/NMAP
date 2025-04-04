@@ -69,28 +69,13 @@ Answer is TCP Connect: <br/>
 
 
 <p align="center">
-Go to the menu bar and click Statistics. On the drop-down menu click Endpoints: <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 20 20 PM" src="https://github.com/user-attachments/assets/521ffbf1-7848-4c1d-a521-da1d84327198" />
-
-
-
-
-<br />
-<br />
-The Endpoints window will pop-up. Look at the bottom left of the window. Click the checkbox next to Name Resolution:  <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 22 04 PM" src="https://github.com/user-attachments/assets/5710b409-c70d-433f-b3c9-169f7c361d2d" />
-
-
+The command needed to find the answer is given during the module explaination. The filter is icmp.type == 3 and icmp.code == 3. The numbers to the right of Displayed, is the answer: <br/>
+<img width="1440" alt="Screenshot 2025-04-04 at 10 55 20 AM" src="https://github.com/user-attachments/assets/3b407a04-e9cb-4e36-81d6-7d67f1d40dc0" />
 
 
 <br />
 <br />
-After checking the Name Resolution checkbox, the MAC address will now display the resolved Name. Looking down through the list, you need to find the name Micro-St. Once you find it look across the row till you get to the Bytes column, displaying the amount of Bytes that were transferred from that Name/MAC Address: <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 23 22 PM" src="https://github.com/user-attachments/assets/0219dbc9-9043-476d-a6a0-ecdd1bf7da3d" />
-
-<br />
-<br />
-Answer is 7474: <br/>
+Answer is 1083: <br/>
 
 
 
@@ -103,26 +88,13 @@ Answer is 7474: <br/>
 Which UDP port in the 55-70 port range is open?
 
 <p align="center">
-Go to the Endpoints window. Click on the labeled IPv4: <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 29 51 PM" src="https://github.com/user-attachments/assets/1da54492-f57a-49e5-8ca4-9fd69e9242b2" />
-
-
-
-<br />
-<br />
-You will now be presented with the IPv4 Endpoints from the pcapng file in the table format. Look for the column labeled City, and click on it to alphabitize them:  <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 31 23 PM" src="https://github.com/user-attachments/assets/c1ecf09e-7b05-4aa0-be64-c5e3a6095f82" />
+The filter to be used is udp.port in {55..70}. As we can see from the search results, the first UDP attempts met a closed port. But upon the third try, an open port was found.: <br/>
+<img width="1440" alt="Screenshot 2025-04-04 at 11 16 50 AM" src="https://github.com/user-attachments/assets/3b057665-c16b-4b45-aad4-79e4bc86fb30" />
 
 
 <br />
 <br />
-Scroll down till you find Kansas City. Once you have found it, count the number of times it appears and you will have your answer.
-<img width="1440" alt="Screenshot 2025-03-31 at 2 33 33 PM" src="https://github.com/user-attachments/assets/aab49713-897a-402f-b344-ab17b81982e3" />
-
-
-<br />
-<br />
-Answer is 4: <br/>
+Answer is 68: <br/>
 
 
 
