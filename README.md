@@ -2,7 +2,7 @@
 
 
 <h2>Description</h2>
-Nmap is an industry-standard tool for mapping networks, identifying live hosts and discovering the services. 
+Nmap is an industry-standard tool for mapping networks, identifying live hosts and discovering the services. As it is one of the most used network scanner tools, a security analyst should identify the network patterns created with it.
 
 <h2>Questions</h2>
 
